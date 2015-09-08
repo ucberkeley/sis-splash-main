@@ -1,2 +1,5 @@
-# sis-splash-main
-SIS Splash Page
+# The SIS Splash Page
+
+## Example
+
+## Screenshot
