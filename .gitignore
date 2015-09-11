@@ -19,8 +19,5 @@
 # Npm log
 npm-debug.log
 
-# Dist directory
-/dist
-
 # Server perm file (used for https)
 server.pem
