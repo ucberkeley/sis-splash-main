@@ -8,3 +8,7 @@ before_script:
   - gem install scss-lint
   - npm install -g gulp
 script: gulp
+# See https://github.com/travis-ci/travis-core/pull/137
+branches:
+  only:
+    - gh-pages
