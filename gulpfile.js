@@ -31,5 +31,13 @@ gulp.task('watch', function() {
   gulp.watch('src/scss/*.scss', ['inlinesource']);
 });
 
+// Exit for exit
+gulp.task('exit', function() {
+  process.exit(0);
+});
+
 // Default Task
 gulp.task('default', ['sass', 'watch', 'inlinesource']);
+
+// Test Task
+gulp.task('test', ['sass', 'watch', 'inlinesource', 'exit']);
