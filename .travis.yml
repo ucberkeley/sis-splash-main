@@ -4,10 +4,8 @@ node_js:
 # https://github.com/sass/node-sass/issues/490
 #  - "0.11"
   - "0.10"
-before_script:
-  - gem install scss-lint
-  - npm install -g gulp
-script: gulp
+before_script: "./script/front-end-test.sh"
+script: gulp test
 # See https://github.com/travis-ci/travis-core/pull/137
 branches:
   only:
