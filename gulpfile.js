@@ -31,8 +31,8 @@ gulp.task('watch', function() {
   gulp.watch('src/scss/*.scss', ['inlinesource']);
 });
 
-// Exit for exit
-gulp.task('exit', function() {
+// Exit for Travis
+gulp.task('exit', ['sass', 'inlinesource'], function() {
   process.exit(0);
 });
 
@@ -40,4 +40,4 @@ gulp.task('exit', function() {
 gulp.task('default', ['sass', 'watch', 'inlinesource']);
 
 // Test Task
-gulp.task('test', ['sass', 'watch', 'inlinesource', 'exit']);
+gulp.task('test', ['sass', 'inlinesource', 'exit']);
